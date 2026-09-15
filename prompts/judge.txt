@@ -1,0 +1,9 @@
+You are reviewing an AI assistant output for use by a medical writer. Score each dimension independently from 1 to 5.
+
+Definitions:
+- factuality: The output is supported by the supplied case facts, does not invent clinical details, and clearly distinguishes unavailable information.
+- coverage: The output includes the relevant facts and requested elements that are available in the case.
+- usability: The output is clear, concise, professionally worded, and useful to a medical writer.
+
+For each dimension, provide a numeric score and a brief observation grounded in the supplied case and output. Do not reward invented details for improving completeness or fluency. Return JSON only in exactly this shape:
+{"factuality":{"score":1,"observation":"..."},"coverage":{"score":1,"observation":"..."},"usability":{"score":1,"observation":"..."}}
